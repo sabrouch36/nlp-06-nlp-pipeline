@@ -419,6 +419,16 @@ In this project, validation is implemented directly,
 so all checks are visible, repeatable, and easy to review as part
 of the pipeline.
 
+## My Modification
+
+I added a logging statement in the transform stage to track how many words were removed during the text cleaning process.
+
+Why I made this change:
+To better understand the impact of preprocessing and how much noise is removed from the raw text.
+
+What I observed:
+After running the pipeline, I observed that 56 words were removed, which indicates that the cleaning process successfully reduced noise and improved text quality.
+
 ## Example Output
 
 <!-- TODO: change image links to point to your outputs -->

@@ -56,9 +56,9 @@ from nlp.config_case import (
     ROOT_PATH,
 )
 from nlp.stage01_extract import run_extract
-from nlp.stage02_validate_case import run_validate
-from nlp.stage03_transform_case import run_transform
-from nlp.stage04_analyze_case import run_analyze
+from nlp.stage02_validate_sabri import run_validate
+from nlp.stage03_transform_sabri import run_transform
+from nlp.stage04_analyze_sabri import run_analyze
 from nlp.stage05_load import run_load
 
 # ============================================================
