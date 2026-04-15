@@ -335,9 +335,6 @@ def run_transform(
     LOG.info(f"  abstract (raw):   {abstract_raw[:120]}...")
     LOG.info(f"  abstract (clean): {abstract_clean[:120]}...")
     LOG.info(
-        f"  word reduction: {len(abstract_raw.split()) - len(abstract_clean.split())} words removed"
-    )
-    LOG.info(
         f"  characters removed: {len(abstract_raw) - len(abstract_clean)} "
         f"({100 * (1 - len(abstract_clean) / max(len(abstract_raw), 1)):.1f}%)"
     )

@@ -419,7 +419,7 @@ In this project, validation is implemented directly,
 so all checks are visible, repeatable, and easy to review as part
 of the pipeline.
 
-## My Modification
+## My Modification ## Phase 4: Technical Modification
 
 I added a logging statement in the transform stage to track how many words were removed during the text cleaning process.
 
@@ -429,17 +429,37 @@ To better understand the impact of preprocessing and how much noise is removed f
 What I observed:
 After running the pipeline, I observed that 56 words were removed, which indicates that the cleaning process successfully reduced noise and improved text quality.
 
+## Modifications ## Phase 5: Apply Skills
+
+In this project, I made several technical modifications to customize the pipeline:
+
+- Changed the input data source by selecting a different arXiv research paper while keeping the same HTML structure.
+- Updated the configuration file to use a custom output name (`sabri_processed.csv`).
+- Modified the analysis stage to generate personalized visualization files:
+  - `sabri_top_tokens.png`
+  - `sabri_wordcloud.png`
+- Updated the README and documentation to reflect the customized outputs.
+
+---
+
+## Observations
+
+- The pipeline successfully processed the new research paper without requiring major structural changes.
+- The most frequent tokens clearly reflect the main topic of the paper.
+- The cleaning process removed noise and improved the quality of the extracted text.
+
+---
+
+## Insights
+
+- Maintaining the same data structure (arXiv) makes the pipeline reusable and stable.
+- Small configuration changes can significantly customize outputs without rewriting core logic.
+- Visualizations (bar chart and word cloud) help quickly identify key themes in the data.
+-
 ## Example Output
 
-<!-- TODO: change image links to point to your outputs -->
-<!-- For example:
 
-![Bar Chart](./data/processed/yourname_top_tokens.png)
 
-![Word Cloud](./data/processed/yourname_wordcloud.png)
+![Bar Chart](./data/processed/sabri_top_tokens.png)
 
--->
-
-![Bar Chart](./docs/images/case_top_tokens.png)
-
-![Word Cloud](./docs/images/case_wordcloud.png)
+![Word Cloud](./data/processed/sabri_wordcloud.png)
